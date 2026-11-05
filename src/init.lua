@@ -1,4 +1,5 @@
--- UniFi Protect Local: SmartThings Edge driver
+-- UniFi Protect Local (Ertan fork): SmartThings Edge driver
+-- Modified by Ertan Söylemez from Stoeckie's original (Apache-2.0)
 -- Uses the official UniFi Protect Integration API with a local API key.
 -- Controller (LAN device) holds the settings; cameras are EDGE_CHILD devices.
 
@@ -792,7 +793,7 @@ local vs_ok, vs_err = pcall(function()
 end)
 if not vs_ok then log.warn("[unifi] videoStream capability unavailable: " .. tostring(vs_err)) end
 
-local driver = Driver("unifi-protect-local", {
+local driver = Driver("unifi-protect-local-ertan", {
   discovery = discovery,
   lifecycle_handlers = {
     init = device_init,
@@ -803,7 +804,7 @@ local driver = Driver("unifi-protect-local", {
   capability_handlers = capability_handlers,
 })
 
-log.info("[unifi] UniFi Protect Local driver starting (v2.10.0)")
+log.info("[unifi] UniFi Protect Local (Ertan fork) driver starting (v2.10.0)")
 -- certificate pinning: which controller device owns an address
 require("certpin").lookup = function(host)
   for _, d in ipairs(driver:get_devices()) do

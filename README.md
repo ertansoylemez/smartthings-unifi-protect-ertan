@@ -1,4 +1,6 @@
-# UniFi Protect Local — SmartThings Edge driver
+# UniFi Protect Local (Ertan fork) — SmartThings Edge driver
+
+> Personal fork of [Stoeckie/smartthings-unifi-protect-local](https://github.com/Stoeckie/smartthings-unifi-protect-local) (Apache-2.0). The driver name and `packageKey` are changed (`unifi-protect-local-ertan`) so it can run from its own channel. The install steps below still describe the original driver's channel; use the original for normal use.
 
 Local integration between UniFi Protect and SmartThings, using the official **UniFi Protect Integration API** with a local API key. No cloud, no username/password.
 
