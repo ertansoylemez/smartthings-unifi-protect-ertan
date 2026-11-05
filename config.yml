@@ -1,5 +1,5 @@
-name: 'UniFi Protect Local'
-packageKey: 'unifi-protect-local'
+name: 'UniFi Protect Local (Ertan)'
+packageKey: 'unifi-protect-local-ertan'
 permissions:
   lan: {}
   discovery: {}

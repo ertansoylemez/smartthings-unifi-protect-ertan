@@ -4,3 +4,9 @@ Copyright 2026 Stoeckie
 This product includes the "lustre" WebSocket library as vendored in the
 SmartThings Sonos Edge driver (https://github.com/SmartThingsCommunity/SmartThingsEdgeDrivers),
 licensed under the Apache License, Version 2.0.
+
+This repository is a fork maintained by Ertan Söylemez
+(https://github.com/ertansoylemez/smartthings-unifi-protect-ertan).
+Changes from the original: driver name and packageKey renamed so the fork
+can be installed from its own channel without clashing with the original.
+Further modifications are listed in the git history.

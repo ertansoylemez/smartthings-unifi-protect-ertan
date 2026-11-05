@@ -32,7 +32,7 @@ end
 local function page(title, inner)
   return [[<!doctype html><html><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>UniFi Protect Local</title>
+<title>UniFi Protect Local (Ertan)</title>
 <style>
 body{font-family:system-ui,sans-serif;max-width:480px;margin:32px auto;padding:0 16px;color:#222}
 h1{font-size:1.3em}label{display:block;margin-top:14px;font-weight:600}
@@ -43,7 +43,7 @@ button{margin-top:18px;padding:10px 18px;font-size:1em}
 end
 
 local function form_page(status)
-  return page("UniFi Protect Local", [[
+  return page("UniFi Protect Local (Ertan)", [[
 <p class="note">Status: ]] .. html_escape(status.text) .. [[</p>
 <form method="post" action="/save">
 <label for="host">Console IP address</label>
